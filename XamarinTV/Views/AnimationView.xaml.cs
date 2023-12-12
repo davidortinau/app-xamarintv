@@ -1,7 +1,4 @@
-﻿using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace XamarinTV.Views
+﻿namespace XamarinTV.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AnimationView : ContentView

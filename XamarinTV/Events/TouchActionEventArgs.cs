@@ -1,6 +1,4 @@
-﻿using System;
-using XamarinTV.Models;
-using Xamarin.Forms;
+﻿using XamarinTV.Models;
 
 namespace XamarinTV.Events
 {

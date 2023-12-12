@@ -1,9 +1,7 @@
 ﻿using XamarinTV.Models;
 using XamarinTV.ViewModels.Base;
-using XamarinTV.Views;
-using System;
-using Xamarin.Forms;
-using Xamarin.Forms.DualScreen;
+using Microsoft.Maui.Controls.Foldable;
+using Microsoft.Maui.Foldable;
 
 namespace XamarinTV.ViewModels
 {

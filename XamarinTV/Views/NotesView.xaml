@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentView
-    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
     xmlns:effects="clr-namespace:XamarinTV.Effects"
+    xmlns:skia="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
     x:Class="XamarinTV.Views.NotesView">
     <ContentView.Resources>
         <ResourceDictionary>
@@ -34,8 +34,8 @@
                 <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}"/>
                 <Setter Property="BorderColor" Value="{DynamicResource TextPrimaryColor}"/>
                 <Setter Property="TextColor" Value="{DynamicResource TextPrimaryColor}" />
-                <Setter Property="BorderRadius" Value="24"/>
-                <Setter Property="BorderWidth" Value="1"/>
+                <!--<Setter Property="BorderRadius" Value="24"/>
+                <Setter Property="BorderWidth" Value="1"/>-->
                 <Setter Property="CornerRadius" Value="24"/>
                 <Setter Property="HeightRequest" Value="48"/>
                 <Setter Property="Margin" Value="6"/>
@@ -57,7 +57,7 @@
                         Capture="True"
                         TouchAction="OnTouchEffectAction" />
                 </Grid.Effects>
-                <forms:SKCanvasView
+                <skia:SKCanvasView
                     x:Name="CanvasView"
                     PaintSurface="OnCanvasViewPaintSurface" />
             </Grid>

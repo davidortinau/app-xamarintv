@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using XamarinTV.Models;
+﻿using XamarinTV.Models;
 using XamarinTV.ViewModels.Base;
 
 namespace XamarinTV.ViewModels

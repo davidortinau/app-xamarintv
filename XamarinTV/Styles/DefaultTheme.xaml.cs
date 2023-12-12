@@ -1,6 +1,4 @@
-﻿using Xamarin.Forms;
-
-namespace XamarinTV.Styles
+﻿namespace XamarinTV.Styles
 {
     public partial class DefaultTheme : ResourceDictionary
     {

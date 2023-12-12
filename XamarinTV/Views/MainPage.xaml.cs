@@ -1,8 +1,5 @@
 ﻿using XamarinTV.ViewModels;
 using XamarinTV.ViewModels.Base;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using System.ComponentModel;
 
 namespace XamarinTV.Views
 {
@@ -13,7 +10,7 @@ namespace XamarinTV.Views
         {
             InitializeComponent();
             BindingContext = MainViewModel.Instance;
-            twoPaneView.LayoutChanged += OnTwoPaneViewLayoutChanged;
+            twoPaneView.SizeChanged += OnTwoPaneViewLayoutChanged;
 
         }
 

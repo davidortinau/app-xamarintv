@@ -1,9 +1,9 @@
-﻿using System;
-using System.ComponentModel;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Timers;
-using Xamarin.Forms;
-using Xamarin.Forms.DualScreen;
+using CommunityToolkit.Maui.Core.Primitives;
+using Microsoft.Maui.Controls.Foldable;
+using Microsoft.Maui.Foldable;
+using Timer = System.Timers.Timer;
 
 namespace XamarinTV.Views
 {
@@ -49,10 +49,8 @@ namespace XamarinTV.Views
             get
             {
                 if (DualScreenInfo.Current.SpanMode == TwoPaneViewMode.SinglePane &&
-                    DualScreenInfo.Current.HingeBounds == Rectangle.Zero)
-                    return Device.info.CurrentOrientation == Xamarin.Forms.Internals.DeviceOrientation.Landscape ||
-                        Device.info.CurrentOrientation == Xamarin.Forms.Internals.DeviceOrientation.LandscapeRight ||
-                        Device.info.CurrentOrientation == Xamarin.Forms.Internals.DeviceOrientation.LandscapeLeft;
+                    DualScreenInfo.Current.HingeBounds == Rect.Zero)
+                    return DeviceDisplay.Current.MainDisplayInfo.Orientation == DisplayOrientation.Landscape;
 
                 return DualScreenInfo.Current.IsLandscape;
             }
@@ -105,25 +103,25 @@ namespace XamarinTV.Views
                 _inactivityTimer.Start();
         }
 
-        private void MediaElement_StateRequested(object sender, StateRequested e)
-        {
-            VisualStateManager.GoToState(PlayPauseToggle,
-                (e.State == MediaElementState.Playing)
-                ? "playing"
-                : "paused");
+        //private void MediaElement_StateRequested(object sender, StateRequested e)
+        //{
+        //    VisualStateManager.GoToState(PlayPauseToggle,
+        //        (e.State == MediaElementState.Playing)
+        //        ? "playing"
+        //        : "paused");
 
-            if (e.State == MediaElementState.Playing)
-            {
-                _playbackTimer.Stop();
-                if (Parent != null)
-                    _playbackTimer.Start();
+        //    if (e.State == MediaElementState.Playing)
+        //    {
+        //        _playbackTimer.Stop();
+        //        if (Parent != null)
+        //            _playbackTimer.Start();
 
-            }
-            else if (e.State == MediaElementState.Paused || e.State == MediaElementState.Stopped)
-            {
-                _playbackTimer.Stop();
-            }
-        }
+        //    }
+        //    else if (e.State == MediaElementState.Paused || e.State == MediaElementState.Stopped)
+        //    {
+        //        _playbackTimer.Stop();
+        //    }
+        //}
 
         void PlayPauseToggle_Clicked(object sender, EventArgs e)
         {
@@ -166,9 +164,9 @@ namespace XamarinTV.Views
 
         void UpdateTimeDisplay()
         {
-            Xamarin.Essentials.MainThread.BeginInvokeOnMainThread(() =>
+            MainThread.BeginInvokeOnMainThread(() =>
             {
-                TimeAndDuration.Text = $"{VideoPlayer.Position.ToString(@"hh\:mm\:ss")} / {VideoPlayer.Duration?.ToString(@"hh\:mm\:ss")}";
+                TimeAndDuration.Text = $"{VideoPlayer.Position.ToString(@"hh\:mm\:ss")} / {VideoPlayer.Duration.ToString(@"hh\:mm\:ss")}";
             });
         }
     }

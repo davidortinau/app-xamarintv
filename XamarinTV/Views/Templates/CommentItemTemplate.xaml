@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentView
-    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:pancakeview="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:pancakeview="clr-namespace:Maui.PancakeView;assembly=PancakeViewCompat"
     x:Class="XamarinTV.Views.Templates.CommentItemTemplate">
     <ContentView.Resources>
         <ResourceDictionary>
 
              <Style x:Key="AvatarBorderStyle" TargetType="pancakeview:PancakeView"> 
-                 <Setter Property="BorderColor" Value="{DynamicResource TextSecondaryColor}" />
-                 <Setter Property="BorderThickness" Value="1" />
+                 <!--<Setter Property="BorderColor" Value="{DynamicResource TextSecondaryColor}" />-->
+                 <!--<Setter Property="BorderThickness" Value="1" />-->
                  <Setter Property="CornerRadius" Value="60" />
                 <Setter Property="VerticalOptions">
                     <Setter.Value>

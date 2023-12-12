@@ -2,11 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinTV.Android", "XamarinTV.Android\XamarinTV.Android.csproj", "{A66B12F5-A46A-4BEA-A809-CC44B30BFA71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinTV.Android", "XamarinTV.Android\XamarinTV.Android.csproj", "{A66B12F5-A46A-4BEA-A809-CC44B30BFA71}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinTV", "XamarinTV\XamarinTV.csproj", "{2BA185EB-4447-4867-BE4F-B27E15184AFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinTV.UWP", "XamarinTV.UWP\XamarinTV.UWP.csproj", "{87672212-2BA2-4636-9360-E231F31FC5F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinTV.UWP", "XamarinTV.UWP\XamarinTV.UWP.csproj", "{87672212-2BA2-4636-9360-E231F31FC5F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

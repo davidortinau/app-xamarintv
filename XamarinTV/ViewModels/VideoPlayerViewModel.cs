@@ -19,7 +19,7 @@ namespace XamarinTV.ViewModels
             get { return _video; }
             set
             {
-                if(SetProperty(ref _video, value))
+                if (SetProperty(ref _video, value))
                 {
                     OnPropertyChanged(nameof(VideoSource));
                 }

@@ -2,10 +2,6 @@
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
-using Xamarin.Forms;
-using FFImageLoading.Forms.Platform;
-using Xamarin.Forms.DualScreen;
-using Sharpnado.Presentation.Forms.Droid;
 
 namespace XamarinTV.Droid
 {
@@ -14,30 +10,30 @@ namespace XamarinTV.Droid
         Icon = "@mipmap/icon",
         Theme = "@style/MainTheme",
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
-    public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    public class MainActivity : Microsoft.Maui.MauiAppCompatActivity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
-            DualScreenService.Init(this);
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
+        //protected override void OnCreate(Bundle savedInstanceState)
+        //{
+        //    DualScreenService.Init(this);
+        //    TabLayoutResource = Resource.Layout.Tabbar;
+        //    ToolbarResource = Resource.Layout.Toolbar;
 
-            SetStatusBarColor(global::Android.Graphics.Color.Black);
+        //    SetStatusBarColor(global::Android.Graphics.Color.Black);
 
-            base.OnCreate(savedInstanceState);
+        //    base.OnCreate(savedInstanceState);
 
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            Forms.Init(this, savedInstanceState); 
-            CachedImageRenderer.Init(true);
-            SharpnadoInitializer.Initialize();
-            LoadApplication(new App());
+        //    Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+        //    Forms.Init(this, savedInstanceState); 
+        //    CachedImageRenderer.Init(true);
+        //    SharpnadoInitializer.Initialize();
+        //    LoadApplication(new App());
             
-        }
+        //}
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }      
+        //public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        //{
+        //    Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        //    base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        //}      
     }
 }

@@ -4,12 +4,12 @@ using System.Linq;
 using Android.Views;
 using XamarinTV.Events;
 using XamarinTV.Models;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
 using AView = Android.Views.View;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.Controls.Platform;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Platform;
 
-[assembly: ResolutionGroupName("XamarinTV")]
-[assembly: ExportEffect(typeof(XamarinTV.Droid.Effects.TouchEffect), "TouchEffect")]
 namespace XamarinTV.Droid.Effects
 {
     public class TouchEffect : PlatformEffect
@@ -169,7 +169,7 @@ namespace XamarinTV.Droid.Effects
                 {
                     continue;
                 }
-                Rectangle viewRect = new Rectangle(_twoIntArray[0], _twoIntArray[1], view.Width, view.Height);
+                Rect viewRect = new Rect(_twoIntArray[0], _twoIntArray[1], view.Width, view.Height);
 
                 if (viewRect.Contains(pointerLocation))
                 {

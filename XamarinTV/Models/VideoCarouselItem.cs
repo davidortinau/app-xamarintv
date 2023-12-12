@@ -1,6 +1,4 @@
-﻿using Xamarin.Forms;
-
-namespace XamarinTV.Models
+﻿namespace XamarinTV.Models
 {
     public class VideoCarouselItem : BindableObject
     {

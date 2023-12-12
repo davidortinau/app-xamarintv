@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using XamarinTV.ViewModels;
+﻿using XamarinTV.ViewModels;
 using XamarinTV.Views;
-using Xamarin.Forms;
 
 namespace XamarinTV.Services
 {

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Globalization;
-using Xamarin.Forms;
+﻿using System.Globalization;
 
 namespace XamarinTV.Converters
 {
@@ -14,7 +12,7 @@ namespace XamarinTV.Converters
             if (String.IsNullOrWhiteSpace(value.ToString()))
                 return null;
 
-            if(Device.RuntimePlatform == Device.UWP)
+            if(DeviceInfo.Platform == DevicePlatform.WinUI)
                 return new Uri($"ms-appx:///Assets/{value}");
             else
                 return new Uri($"ms-appx:///{value}");

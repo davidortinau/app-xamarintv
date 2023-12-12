@@ -4,6 +4,6 @@ namespace XamarinTV.ViewModels
 {
     public class NotesViewModel : BaseViewModel
     {
- 
+
     }
 }

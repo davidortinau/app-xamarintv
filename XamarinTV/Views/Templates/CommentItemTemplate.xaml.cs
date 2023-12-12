@@ -1,6 +1,4 @@
-﻿using Xamarin.Forms;
-
-namespace XamarinTV.Views.Templates
+﻿namespace XamarinTV.Views.Templates
 {
     public partial class CommentItemTemplate : ContentView
     {

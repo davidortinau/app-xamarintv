@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using Xamarin.Forms;
-using XamarinTV.Models;
+﻿using XamarinTV.Models;
 
 namespace XamarinTV.Views
 {

@@ -2,11 +2,12 @@
 using XamarinTV.Models;
 using System;
 using System.Linq;
-using Windows.UI.Input;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Input;
-using Xamarin.Forms;
+using Microsoft.UI.Input;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Input;
 using Xamarin.Forms.Platform.UWP;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui;
 
 [assembly: ResolutionGroupName("XamarinTV")]
 [assembly: ExportEffect(typeof(XamarinTV.UWP.Effects.TouchEffect), "TouchEffect")]

@@ -1,6 +1,5 @@
 ﻿using System.Windows.Input;
 using XamarinTV.ViewModels.Base;
-using Xamarin.Forms;
 
 namespace XamarinTV.ViewModels
 {

@@ -1,5 +1,4 @@
 ﻿using XamarinTV.Events;
-using Xamarin.Forms;
 
 namespace XamarinTV.Effects
 {

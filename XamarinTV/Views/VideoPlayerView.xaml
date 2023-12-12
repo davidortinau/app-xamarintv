@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentView
-    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     x:Class="XamarinTV.Views.VideoPlayerView"
     BackgroundColor="{StaticResource BlackColor}">
     <ContentView.Resources>
@@ -49,22 +50,22 @@
 
             <Style
                 x:Key="VideoPlayerStyle"
-                TargetType="MediaElement">
+                TargetType="toolkit:MediaElement">
                 <Setter
                     Property="BackgroundColor"
                     Value="{DynamicResource BlackColor}" />
                 <Setter
                     Property="HeightRequest"
                     Value="300" />
-                <Setter
+                <!--<Setter
                     Property="AutoPlay"
-                    Value="True" />
-                <Setter
+                    Value="True" />-->
+                <!--<Setter
                     Property="ShowsPlaybackControls"
-                    Value="False" />
-                <Setter
+                    Value="False" />-->
+                <!--<Setter
                     Property="IsLooping"
-                    Value="False" />
+                    Value="False" />-->
                 <Setter
                     Property="VerticalOptions"
                     Value="FillAndExpand" />
@@ -109,11 +110,10 @@
                     <RowDefinition
                         Height="*" />
                 </Grid.RowDefinitions>
-                <MediaElement
+                <toolkit:MediaElement
                     Grid.Row="1"
                     x:Name="VideoPlayer"
                     Source="{Binding VideoSource, Converter={StaticResource VideoSourceConverter}}"
-                    StateRequested="MediaElement_StateRequested"
                     MediaOpened="VideoPlayer_MediaOpened"
                     Volume="{Binding Volume}"
                     Style="{StaticResource VideoPlayerStyle}"/>

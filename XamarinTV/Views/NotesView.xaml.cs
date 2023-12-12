@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using XamarinTV.Events;
+﻿using XamarinTV.Events;
 using XamarinTV.Models;
 using SkiaSharp;
-using SkiaSharp.Views.Forms;
-using Xamarin.Forms;
+using SkiaSharp.Views.Maui;
 
 namespace XamarinTV.Views
 {
@@ -73,7 +69,7 @@ namespace XamarinTV.Views
                 StrokeJoin = SKStrokeJoin.Round
             };
 
-            BindableLayout.SetItemsSource(ColorsLayout, _colors.Select(x => new ColorSource(Color.FromHex(x))));
+            BindableLayout.SetItemsSource(ColorsLayout, _colors.Select(x => new ColorSource(Color.FromArgb(x))));
         }
 
         public ColorSource SelectedColorSource { get; set; }

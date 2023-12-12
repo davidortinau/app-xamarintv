@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using XamarinTV.Models;
 using XamarinTV.Services;
 using XamarinTV.ViewModels.Base;

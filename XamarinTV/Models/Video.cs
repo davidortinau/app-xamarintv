@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace XamarinTV.Models
+﻿namespace XamarinTV.Models
 {
     public class Video
     {

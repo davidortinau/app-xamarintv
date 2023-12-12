@@ -1,6 +1,4 @@
-﻿using Xamarin.Forms;
-
-namespace XamarinTV.Views
+﻿namespace XamarinTV.Views
 {
     public partial class BrowseVideosView : ContentView
     {

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 using XamarinTV.Models;
 using XamarinTV.Services;
 using XamarinTV.ViewModels.Base;
@@ -11,6 +9,13 @@ namespace XamarinTV.ViewModels
     {
         static bool _isFirstLoaded;
         ObservableCollection<VideoGroup> _videos;
+
+        private string _currentState = States.Loading;
+        public string CurrentState
+        {
+            get {  return _currentState; }
+            set { SetProperty(ref _currentState, value);}
+        }
 
         public FeaturedVideosViewModel()
         {

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
-using Xamarin.Forms.StateSquid;
+using XamarinTV.Models;
+using State = string;
 
 namespace XamarinTV.ViewModels.Base
 {
@@ -12,14 +10,14 @@ namespace XamarinTV.ViewModels.Base
         bool _isBusy;
         bool _hasAppearedFirst = false;
         bool _hasAppeared = false;
-        State _currentState = State.None;
+        State _currentState = States.None;
 
         public bool IsBusy
         {
             get { return _isBusy; }
             set {
                 SetProperty(ref _isBusy, value);
-                CurrentState = _isBusy ? State.Loading : State.None;
+                CurrentState = _isBusy ? States.Loading : States.None;
             }
         }
 

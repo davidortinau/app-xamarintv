@@ -1,9 +1,9 @@
 ﻿using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Navigation;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Navigation;
 
 namespace XamarinTV.UWP
 {
@@ -29,7 +29,7 @@ namespace XamarinTV.UWP
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-            Frame rootFrame = Window.Current.Content as Frame;
+            Frame rootFrame = App.Window.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
@@ -47,7 +47,7 @@ namespace XamarinTV.UWP
                 }
 
                 // Place the frame in the current Window
-                Window.Current.Content = rootFrame;
+                App.Window.Content = rootFrame;
             }
 
             if (e.PrelaunchActivated == false)
@@ -60,7 +60,7 @@ namespace XamarinTV.UWP
                     rootFrame.Navigate(typeof(MainPage), e.Arguments);
                 }
                 // Ensure the current window is active
-                Window.Current.Activate();
+                App.Window.Activate();
             }
         }
 

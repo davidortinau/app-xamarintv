@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     xmlns:local="clr-namespace:XamarinTV.Views"
-    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:dualScreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"
+    xmlns:foldable="clr-namespace:Microsoft.Maui.Controls.Foldable;assembly=Microsoft.Maui.Controls.Foldable"
     mc:Ignorable="d"
     x:Class="XamarinTV.Views.MainPage"
     Visual="Material">
-    <dualScreen:TwoPaneView
+    <foldable:TwoPaneView
         x:Name="twoPaneView"
         MinWideModeWidth="4000"        
         Mode="{Binding TwoPaneViewMode, Mode=OneWayToSource}">
@@ -66,14 +66,14 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
         <!--Pane 1-->
-        <dualScreen:TwoPaneView.Pane1>
+        <foldable:TwoPaneView.Pane1>
             <local:AnimationView
                 ViewToAnimateIn="{Binding Pane1, Converter={StaticResource ViewModelToViewConverter}}"></local:AnimationView>
-        </dualScreen:TwoPaneView.Pane1>
+        </foldable:TwoPaneView.Pane1>
         <!--Pane 2-->
-        <dualScreen:TwoPaneView.Pane2>
+        <foldable:TwoPaneView.Pane2>
             <local:AnimationView
                 ViewToAnimateIn="{Binding Pane2, Converter={StaticResource ViewModelToViewConverter}}"></local:AnimationView>
-        </dualScreen:TwoPaneView.Pane2>
-    </dualScreen:TwoPaneView>
+        </foldable:TwoPaneView.Pane2>
+    </foldable:TwoPaneView>
 </ContentPage>

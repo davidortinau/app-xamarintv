@@ -1,7 +1,4 @@
-﻿using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace XamarinTV.Styles
+﻿namespace XamarinTV.Styles
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DarkTheme : ResourceDictionary

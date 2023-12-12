@@ -1,18 +1,14 @@
-﻿using XamarinTV.Views;
-using Xamarin.Forms.PlatformConfiguration;
-using Xamarin.Forms.PlatformConfiguration.WindowsSpecific;
-using FormsApplication = Xamarin.Forms.Application;
-using System.Collections.Generic;
+﻿using Microsoft.Maui.Controls.PlatformConfiguration;
+using Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;
+using XamarinTV.Views;
 
 namespace XamarinTV
 {
-    public partial class App : FormsApplication
+    public partial class App : Microsoft.Maui.Controls.Application
     {
         static MainPage _mainPage;
         public App()
         {
-            Xamarin.Forms.Device.SetFlags(new List<string>() { "StateTriggers_Experimental", "IndicatorView_Experimental", "CarouselView_Experimental", "MediaElement_Experimental" });
-
             InitializeComponent();
 
             if (_mainPage != null)
@@ -26,7 +22,7 @@ namespace XamarinTV
             MainPage = _mainPage;
 
 
-            On<Windows>().SetImageDirectory("Assets");
+            //On<Windows>().SetImageDirectory("Assets");
         }
 
         public static string AppTheme { get; set; }

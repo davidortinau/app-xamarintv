@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using XamarinTV.Models;
 using XamarinTV.Styles;
 using XamarinTV.ViewModels.Base;
-using Xamarin.Essentials;
-using Xamarin.Forms;
 
 namespace XamarinTV.ViewModels
 {
