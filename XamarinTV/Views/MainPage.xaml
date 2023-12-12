@@ -7,8 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:foldable="clr-namespace:Microsoft.Maui.Controls.Foldable;assembly=Microsoft.Maui.Controls.Foldable"
     mc:Ignorable="d"
-    x:Class="XamarinTV.Views.MainPage"
-    Visual="Material">
+    x:Class="XamarinTV.Views.MainPage">
     <foldable:TwoPaneView
         x:Name="twoPaneView"
         MinWideModeWidth="4000"        

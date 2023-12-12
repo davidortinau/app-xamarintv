@@ -10,12 +10,12 @@ namespace XamarinTV.ViewModels
         static bool _isFirstLoaded;
         ObservableCollection<VideoGroup> _videos;
 
-        private string _currentState = States.Loading;
-        public string CurrentState
-        {
-            get {  return _currentState; }
-            set { SetProperty(ref _currentState, value);}
-        }
+        //private string _currentState = States.Loading;
+        //public string CurrentState
+        //{
+        //    get {  return _currentState; }
+        //    set { SetProperty(ref _currentState, value);}
+        //}
 
         public FeaturedVideosViewModel()
         {

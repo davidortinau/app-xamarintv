@@ -181,7 +181,6 @@
                     Style="{StaticResource DescriptionTextStyle}"/>
                 <Button
                     Grid.Row="1"
-                    Visual="Material"
                     Text="Visit GitHub"
                     Style="{StaticResource SettingsButtonStyle}"
                     Command="{Binding ViewCodeCommand}"/>

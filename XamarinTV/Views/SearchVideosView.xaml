@@ -67,7 +67,6 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Placeholder="Find Xamarin videos, speakers..."
-                    Visual="Material"
                     Style="{StaticResource VideosSearchBarStyle}"/>
                 <!-- LAST SEARCHED -->
                 <Grid
