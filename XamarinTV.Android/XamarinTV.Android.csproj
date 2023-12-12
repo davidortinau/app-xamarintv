@@ -1,52 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <AndroidApplication>True</AndroidApplication>
-    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
-    <AndroidResgenClass>Resource</AndroidResgenClass>
-    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
-    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
-    <AndroidUseAapt2>true</AndroidUseAapt2>
-    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <TargetFrameworks>net8.0-android</TargetFrameworks>
     <UseMaui>True</UseMaui>
-    <RuntimeIdentifiers>android-arm;android-x86;android-arm64</RuntimeIdentifiers>
     <AssemblyTitle>XamarinTV.Android</AssemblyTitle>
     <Product>XamarinTV.Android</Product>
     <Copyright>Copyright ©  2014</Copyright>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <AndroidLinkMode>None</AndroidLinkMode>
-    <AndroidDexTool>d8</AndroidDexTool>
-    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <AndroidManagedSymbols>true</AndroidManagedSymbols>
-    <AndroidDexTool>d8</AndroidDexTool>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'MultiDebug|AnyCPU' ">
-    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
-    <JavaMaximumHeapSize>
-    </JavaMaximumHeapSize>
-    <AndroidEnableSGenConcurrent>false</AndroidEnableSGenConcurrent>
-    <AndroidUseAapt2>false</AndroidUseAapt2>
-    <AndroidManifest>
-    </AndroidManifest>
-    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-    <RuntimeIdentifiers>android-arm64;android-arm;android-x86</RuntimeIdentifiers>
-  </PropertyGroup>
+  
   <ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Maui" Version="7.0.0" />
 	  <PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="3.0.0" />
+	  <PackageReference Include="FFImageLoading.Maui" Version="1.0.3" />
 	  <PackageReference Include="Microsoft.Maui.Controls.Foldable" Version="8.0.3" />
 	  <PackageReference Include="AlohaKit.Animations" Version="1.0.0" />
-	  <PackageReference Include="FFImageLoadingCompat.Maui" Version="0.1.1" />
-	  <PackageReference Include="FFImageLoadingCompat.Transformations" Version="0.1.1" />
 	  <PackageReference Include="Sharpnado.Tabs.Maui" Version="3.0.1" />
     <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.3" />
     <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.3" />

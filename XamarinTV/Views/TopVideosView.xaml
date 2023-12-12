@@ -4,8 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewmodels="clr-namespace:XamarinTV.ViewModels"
     xmlns:templates="clr-namespace:XamarinTV.Views.Templates"
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Maui;assembly=FFImageLoading.Compat.Maui"
-    xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Compat.Transformations"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Maui;assembly=FFImageLoading.Maui"
+    xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Maui"
     xmlns:xamanimation="clr-namespace:AlohaKit.Animations;assembly=AlohaKit.Animations"
     x:Class="XamarinTV.Views.TopVideosView"
     BackgroundColor="{DynamicResource BackgroundColor}">

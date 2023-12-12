@@ -1,6 +1,7 @@
 
 
 using CommunityToolkit.Maui;
+using FFImageLoading.Maui;
 using Maui.PancakeView;
 using Sharpnado.Tabs;
 
@@ -15,6 +16,7 @@ public static class MauiProgramExtensions
             .UseMauiCommunityToolkitMediaElement()
             .UseMauiCommunityToolkit()
             .UseSharpnadoTabs(false)
+            .UseFFImageLoading()
             .UsePancakeViewCompat()
             ;
 

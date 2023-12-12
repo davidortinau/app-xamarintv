@@ -15,10 +15,9 @@
   <ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Maui" Version="7.0.0" />
 	  <PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="3.0.0" />
+	  <PackageReference Include="FFImageLoading.Maui" Version="1.0.3" />
 	  <PackageReference Include="Microsoft.Maui.Controls.Foldable" Version="8.0.3" />
 	  <PackageReference Include="AlohaKit.Animations" Version="1.0.0" />
-	  <PackageReference Include="FFImageLoadingCompat.Maui" Version="0.1.1" />
-	  <PackageReference Include="FFImageLoadingCompat.Transformations" Version="0.1.1" />
 	  <PackageReference Include="Sharpnado.Tabs.Maui" Version="3.0.1" />
     <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.3" />
     <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.3" />
